@@ -14,7 +14,11 @@ public class Guessing {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //crear el arbol con las preguntas
+        //cargar las respuestas
+        //hacer el menu iterativo
+        //cargar las respuestas del usuario
+        //y presentar la respuesta
     }
     
 }
