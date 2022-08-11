@@ -23,9 +23,9 @@ public class Guessing {
         //y presentar la respuesta(/)
         arbolBinario raiz=new arbolBinario();
         LinkedList<String>preguntas=new LinkedList<>();
-        preguntas.add("Es este animal un mamifero");
-        preguntas.add("Es este animal un carnivoro");
-        preguntas.add("Este animal se para en 4 patas");
+        preguntas.add("Es este animal un mamifero?");
+        preguntas.add("Es este animal un carnivoro?");
+        preguntas.add("Este animal se para en 4 patas?");
         raiz.buildTreeQuestion(preguntas);
         LinkedList<String> respuestas = new LinkedList();
         respuestas.add("si");
@@ -48,8 +48,12 @@ public class Guessing {
         respuestas4.add("no");
         raiz.buildTreeResponce("Paloma", respuestas4);
         LinkedList<String>respuestasUser=MenuPrueba.InvocarMenu(preguntas);
-        String animal=raiz.searchAnswer(respuestasUser);
-        System.out.println("El animal es: "+animal);
+        String animal = raiz.searchAnswer(respuestasUser);
+        if(animal == null){
+            System.out.println("No hay un animal registrado con esas caracteristicas");
+        }else{
+            System.out.println("Estas pensando en un "+animal+"!");
+        }
     }
     
 }

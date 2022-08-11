@@ -17,20 +17,23 @@ public class MenuPrueba {
     public static LinkedList<String> InvocarMenu(LinkedList<String>preguntas){
         LinkedList<String> respUsuario = new LinkedList();
         Scanner sc=new Scanner(System.in);
-        System.out.println("Ingrese su nombre: ");
-        String nombre=sc.next();
-        System.out.println("Bienvenido "+nombre);
-        System.out.println("Ingrese el numero de preguntas a realizarse: ");
-        int cant=sc.nextInt();
+        //System.out.println("Ingrese su nombre: ");
+        //String nombre=sc.next();
+        //System.out.println("Bienvenido "+nombre);
+        //System.out.println("Ingrese el numero de preguntas a realizarse: ");
+        //int cant=sc.nextInt();
+        int cant = 3;
         while(cant>preguntas.size()){
             System.out.println("El numero de preguntas proporcionado es demasiado grande intenta con otro numero");
             cant=sc.nextInt();
         }
         for(int i=0;i<cant;i++){
             System.out.println(preguntas.get(i));
+            System.out.print("> ");
             String resp=sc.next();
             while(!(resp.toLowerCase().equals("si") || resp.toLowerCase().equals("no"))){
                 System.out.println("Ingrese una respuesta valida (si/no)");
+                System.out.print("> ");
                 resp=sc.next();
             }
             respUsuario.add(resp);

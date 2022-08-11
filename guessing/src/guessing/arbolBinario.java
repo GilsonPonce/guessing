@@ -117,9 +117,9 @@ public class arbolBinario {
     private String searchAnswer(Nodo n,LinkedList<String> respuestasUsuario){
         String resp = respuestasUsuario.poll();
         if(resp != null){
-          if(resp.equals("si")){
+          if(resp.toLowerCase().equals("si")){
               return searchAnswer(n.getIzquierda(),respuestasUsuario);
-          }else if(resp.equals("no")){
+          }else if(resp.toLowerCase().equals("no")){
               return searchAnswer(n.getDerecha(),respuestasUsuario);
           }
         }else{
