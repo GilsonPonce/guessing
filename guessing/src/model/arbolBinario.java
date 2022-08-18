@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package guessing;
+package model;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -17,6 +17,10 @@ public class arbolBinario {
 
     public arbolBinario() {
 
+    }
+
+    public Nodo getRaiz() {
+        return raiz;
     }
     
     public int altura(){
@@ -60,7 +64,7 @@ public class arbolBinario {
     public void buildTreeQuestion(LinkedList<String> preguntas){
         if(altura()==0){
           String pregunta = preguntas.getFirst();
-          this.raiz = new Nodo(pregunta);
+          this.raiz = new Nodo(pregunta,true);
         }
         buildTreeQuestion(this.raiz,preguntas);
     }
@@ -73,8 +77,8 @@ public class arbolBinario {
            }else{
                pregunta = preguntas.get(altura());
            }
-           n.setDerecha(new Nodo(pregunta));
-           n.setIzquierda(new Nodo(pregunta));
+           n.setDerecha(new Nodo(pregunta,true));
+           n.setIzquierda(new Nodo(pregunta,true));
        
        if(preguntas.size()!= altura()){
                 buildTreeQuestion(n.getDerecha(),preguntas);
@@ -93,7 +97,7 @@ public class arbolBinario {
         String resp = colaRespuesta.poll();
         if(resp != null){
             if(colaRespuesta.isEmpty()){//ya estoy en el ultimo elemento
-                Nodo nodoRes = new Nodo(respuesta);
+                Nodo nodoRes = new Nodo(respuesta,false);
                 if(resp.equals("si")){
                     n.setIzquierda(nodoRes);
                 }else if(resp.equals("no")){

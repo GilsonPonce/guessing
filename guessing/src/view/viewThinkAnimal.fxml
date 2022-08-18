@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="188.0" prefWidth="457.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controller.ViewThinkAnimalController">
+   <children>
+      <Label layoutX="137.0" layoutY="21.0" text="Es el momento!">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="57.0" text="Ahora piensa en un animal">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStartGame" layoutX="184.0" layoutY="138.0" mnemonicParsing="false" onAction="#hangleStartGame" text="Comenzemos" />
+      <Label layoutX="185.0" layoutY="106.0" text="Ya lo tienes!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

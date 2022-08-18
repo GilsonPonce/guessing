@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
 
-import guessing.arbolBinario;
+import model.arbolBinario;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import static org.testng.Assert.*;
