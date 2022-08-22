@@ -4,6 +4,8 @@
  */
 package controller;
 
+import com.sun.prism.paint.Color;
+import java.awt.Paint;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
@@ -12,6 +14,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
 import model.Database;
 import model.Nodo;
 import model.arbolBinario;
@@ -97,5 +101,5 @@ public class ViewQuestionController implements Initializable {
     private void hangleClose(ActionEvent event) {
        System.exit(0);
     }
-    
+
 }
