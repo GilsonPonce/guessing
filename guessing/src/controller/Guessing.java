@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Gilson Ponce Briones
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class Guessing extends Application{
 

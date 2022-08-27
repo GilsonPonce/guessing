@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author Gilson Ponce
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class Nodo {
     private String dato;

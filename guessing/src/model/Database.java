@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  *
- * @author Gilson Ponce
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public final class Database {
     private arbolBinario arbol;
@@ -40,7 +40,6 @@ public final class Database {
     public void buildTree(LinkedList<String> preguntas, Map<String,LinkedList<String>> respuestas){
         arbol = new arbolBinario();
         arbol.buildTreeQuestion(preguntas);
-        arbol.preorden();
         respuestas.forEach((key,value)-> arbol.buildTreeResponce(key,value));
         //arbol.preorden();
     }

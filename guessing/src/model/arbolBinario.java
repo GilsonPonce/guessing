@@ -10,7 +10,7 @@ import java.util.Stack;
 
 /**
  *
- * @author Gilson Ponce
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class arbolBinario {
     private Nodo raiz;

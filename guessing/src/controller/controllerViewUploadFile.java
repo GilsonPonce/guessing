@@ -33,7 +33,7 @@ import model.Database;
 /**
  * FXML Controller class
  *
- * @author Gilson Ponce
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class controllerViewUploadFile implements Initializable {
 

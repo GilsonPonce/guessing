@@ -32,6 +32,8 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
 import model.Database;
 import model.Nodo;
 import model.arbolBinario;
@@ -39,7 +41,7 @@ import model.arbolBinario;
 /**
  * FXML Controller class
  *
- * @author GJPONCE
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class ViewQuestionController implements Initializable {
 
@@ -194,5 +196,4 @@ public class ViewQuestionController implements Initializable {
         btnVolverJugar.setVisible(true);
         btnClose.setVisible(true);
     }
-
 }

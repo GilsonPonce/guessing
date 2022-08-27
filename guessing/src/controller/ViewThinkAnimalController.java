@@ -28,7 +28,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 /**
  * FXML Controller class
  *
- * @author Gilson Ponce
+ * @author Gilson Ponce Briones, Jose Zambrano, Derek Aviles
  */
 public class ViewThinkAnimalController implements Initializable {
 

@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
 
-import model.arbolBinario;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import static org.testng.Assert.*;
@@ -24,16 +23,16 @@ public class testArbolBinario {
         
    @Test
    public void testArbolBinario(){
-       arbolBinario arbolDecision = new arbolBinario();
+       //arbolBinario arbolDecision = new arbolBinario();
        LinkedList<String> preguntas = new LinkedList();
        preguntas.add("Es este animal vive en la sabana Africana?");
        preguntas.add("Es mamifero?");
        preguntas.add("Es carnivoro?");
        preguntas.add("Se para en cuatro patas?");
        preguntas.add("Puede llegar a pesar toneladas?");
-       arbolDecision.buildTreeQuestion(preguntas);
+       //arbolDecision.buildTreeQuestion(preguntas);
        System.out.println("Impresion de arbol");
-       arbolDecision.preorden();
+       //arbolDecision.preorden();
        /*LinkedList<String> respuestas = new LinkedList();
        respuestas.add("si");
        respuestas.add("si");
