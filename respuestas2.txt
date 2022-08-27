@@ -1,0 +1,12 @@
+Elefante si si no si si
+Leon si si si si no
+Buitre si no si no no
+Pinguino no no no no no
+Anaconda no no no no si
+Jirafa si si no si no
+Cocodrilo si no si si no
+Tejedores si no no no no
+Tortuga no no no si no
+Ballena no si no no si
+Tiburon no no si no no
+Canguro no si no no no

@@ -40,6 +40,7 @@ public final class Database {
     public void buildTree(LinkedList<String> preguntas, Map<String,LinkedList<String>> respuestas){
         arbol = new arbolBinario();
         arbol.buildTreeQuestion(preguntas);
+        arbol.preorden();
         respuestas.forEach((key,value)-> arbol.buildTreeResponce(key,value));
         //arbol.preorden();
     }

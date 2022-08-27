@@ -16,7 +16,7 @@ public class arbolBinario {
     private Nodo raiz;
 
     public arbolBinario() {
-
+       
     }
 
     public Nodo getRaiz() {
@@ -60,30 +60,31 @@ public class arbolBinario {
             preorden(n.getDerecha());
         }
     }
-
+    
+    
     public void buildTreeQuestion(LinkedList<String> preguntas){
-        if(altura()==0){
-          String pregunta = preguntas.getFirst();
-          this.raiz = new Nodo(pregunta,true);
-        }
-        buildTreeQuestion(this.raiz,preguntas);
-    }
-    
-    
-    public void buildTreeQuestion(Nodo n,LinkedList<String> preguntas){
-           String pregunta;
-           if (preguntas.size() == altura()) {
-               pregunta = preguntas.get(altura()-1);
-           }else{
-               pregunta = preguntas.get(altura());
+        LinkedList<Nodo> nodos = new LinkedList();
+        for(int i=0;i<preguntas.size();i++){
+           double numNodos = Math.pow(2, i);
+           String pregunta = preguntas.get(i);
+           for(int p=0;p<numNodos;p++){
+               nodos.add(new Nodo(pregunta,true));
            }
-           n.setDerecha(new Nodo(pregunta,true));
-           n.setIzquierda(new Nodo(pregunta,true));
-       
-       if(preguntas.size()!= altura()){
-                buildTreeQuestion(n.getDerecha(),preguntas);
-                buildTreeQuestion(n.getIzquierda(),preguntas);
-       }
+        }
+        int numNodoTotal = nodos.size();
+        for(int e=0;e<numNodoTotal;e++){
+            int nodoImpar = (2*e)+1;
+            int nodoPar = (2*e)+2;
+            Nodo n = nodos.get(e);
+            if(e == 0){
+                this.raiz = n;
+            }
+            n.setDerecha(nodos.get(nodoPar));
+            n.setIzquierda(nodos.get(nodoImpar));
+            if(nodoPar == (numNodoTotal - 1)){
+               break;
+            }
+        }
        
     }
     

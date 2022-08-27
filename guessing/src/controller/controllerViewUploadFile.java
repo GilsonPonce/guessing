@@ -108,6 +108,11 @@ public class controllerViewUploadFile implements Initializable {
             return;
         }
         LinkedList<String> preguntas = preguntas();
+        if(Integer.parseInt(txtNumQuestion.getText().trim())>preguntas.size()){
+            warning("EL numero de preguntas que quieres contestar es mayor a las cargadas");
+            txtNumQuestion.setText("");
+            return;
+        }
         Map<String,LinkedList<String>> respuestas = respuestas();
         data.buildTree(preguntas, respuestas);
         data.setNumQuestion(Integer.parseInt(txtNumQuestion.getText().trim()));
@@ -161,7 +166,7 @@ public class controllerViewUploadFile implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setTitle("Adivinando tu animal");
+            stage.setTitle("Adivinando Animales");
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
