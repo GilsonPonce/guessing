@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="235.0" prefWidth="443.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewQuestionController">
    <children>
       <Button fx:id="btnAnswerSi" layoutX="118.0" layoutY="148.0" mnemonicParsing="false" onAction="#hangleAnswerSi" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: GREEN;" text="SI" textFill="WHITE">
@@ -31,5 +30,10 @@
       </ImageView>
       <Button fx:id="btnVolverJugar" layoutX="176.0" layoutY="164.0" mnemonicParsing="false" onAction="#hangleVolverJugar" prefHeight="27.0" prefWidth="91.0" text="Volver a Jugar" visible="false" />
       <Button fx:id="btnVolverInicio" layoutX="176.0" layoutY="135.0" mnemonicParsing="false" onAction="#hangleVolverInicio" prefHeight="21.0" prefWidth="91.0" text="Volver a Inicio" visible="false" />
+      <ImageView fx:id="imgvBien" fitHeight="84.0" fitWidth="104.0" layoutX="10.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/bien.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

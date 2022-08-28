@@ -3,23 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/model/arbolBinario.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/test/testArbolBinario.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/controller/ViewThinkAnimalController.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/controller/ViewQuestionController.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/model/Database.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/model/Nodo.java</file>
-            <file>file:/C:/Users/GJPONCE/Downloads/guessing-main/guessing-main/guessing/src/controller/controllerViewUploadFile.java</file>
-=======
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/controller/ViewQuestionController.java</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/model/Database.java</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/controller/Guessing.java</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/view/viewQuestion.fxml</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/controller/ViewThinkAnimalController.java</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/controller/controllerViewUploadFile.java</file>
-            <file>file:/C:/Users/FxFF/Documents/GitHub/guessing/guessing/src/model/arbolBinario.java</file>
->>>>>>> 87bc3b0ba9a21418ef870751551bcc92a9b75c1d
+            <file>file:/C:/Users/GJPONCE/Documents/backup/Documents/UNIVERSIDAD/ESTRUCTURA%20DE%20DATOS/proyecto2/guessing/src/controller/ViewThinkAnimalController.java</file>
+            <file>file:/C:/Users/GJPONCE/Documents/backup/Documents/UNIVERSIDAD/ESTRUCTURA%20DE%20DATOS/proyecto2/guessing/src/controller/Guessing.java</file>
+            <file>file:/C:/Users/GJPONCE/Documents/backup/Documents/UNIVERSIDAD/ESTRUCTURA%20DE%20DATOS/proyecto2/guessing/src/view/viewQuestion.fxml</file>
+            <file>file:/C:/Users/GJPONCE/Documents/backup/Documents/UNIVERSIDAD/ESTRUCTURA%20DE%20DATOS/proyecto2/guessing/src/controller/ViewQuestionController.java</file>
         </group>
     </open-files>
 </project-private>

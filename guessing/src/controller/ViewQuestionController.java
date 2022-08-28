@@ -8,6 +8,7 @@ import com.sun.prism.paint.Color;
 import java.awt.Paint;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
@@ -28,12 +29,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Background;
 import model.Database;
 import model.Nodo;
 import model.arbolBinario;
@@ -64,7 +59,8 @@ public class ViewQuestionController implements Initializable {
     private Button btnVolverJugar;
     @FXML
     private Button btnVolverInicio;
-    private Clip sonido;
+    @FXML
+    private ImageView imgvBien;
     /**
      * Initializes the controller class.
      */
@@ -75,17 +71,6 @@ public class ViewQuestionController implements Initializable {
         arbolBinario arbol = data.getArbol();
         n = arbol.getRaiz();
         lblQuestion.setText(n.getDato());
-        try {
-            sonido = AudioSystem.getClip();
-            sonido.open(AudioSystem.getAudioInputStream(new File("./src/resources/music.wav")));
-            sonido.start();
-        } catch (LineUnavailableException ex) {
-            Logger.getLogger(ViewQuestionController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedAudioFileException ex) {
-            Logger.getLogger(ViewQuestionController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(ViewQuestionController.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
     
     private void searchPossibleAnswers(Nodo n) {
@@ -117,7 +102,7 @@ public class ViewQuestionController implements Initializable {
                }
            }else{
                habilitarBotones();
-               lblQuestion.setText("Tal vez no haiga un animal con esas caracteristicas");
+               lblQuestion.setText("No existe un animal con esas caracteristicas");
            }
            return; 
         }
@@ -151,8 +136,8 @@ public class ViewQuestionController implements Initializable {
 
     @FXML
     private void hangleVolverJugar(ActionEvent event) {
-        Image image = new Image("./resources/pensando.gif");
-        imgvAvatar.setImage(image);
+        imgvBien.setVisible(false);
+        imgvAvatar.setVisible(true);
         btnAnswerSi.setVisible(true);
         btnAnswerNo.setVisible(true);
         btnVolverInicio.setVisible(false);
@@ -168,7 +153,6 @@ public class ViewQuestionController implements Initializable {
     @FXML
     private void hangleVolverInicio(ActionEvent event) {
         try {
-            sonido.close();
             Node source = (Node) event.getSource();
             Stage stage1 = (Stage) source.getScene().getWindow();
             stage1.close();
@@ -188,8 +172,8 @@ public class ViewQuestionController implements Initializable {
     }
     
     private void habilitarBotones(){
-        Image image = new Image("./resources/bien.gif");
-        imgvAvatar.setImage(image);
+        imgvBien.setVisible(true);
+        imgvAvatar.setVisible(false);
         btnAnswerSi.setVisible(false);
         btnAnswerNo.setVisible(false);
         btnVolverInicio.setVisible(true);
